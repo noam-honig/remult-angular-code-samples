@@ -1,0 +1,23 @@
+<h1>Welcome to the remult code sample project</h1>
+<p>
+  In this project we include all sorts of code samples regarding different use cases that are relevant for applications
+  that use remult
+</p>
+<a href="https://github.com/noam-honig/remult-angular-code-samples">The source code of all these code samples can be
+  found at github</a>
+
+<data-control [field]="$.search"></data-control>
+<ng-container *ngFor="let m of router.config">
+  <ng-container *ngIf="shouldDisplayRoute(m)">
+    <mat-card style="margin:10px" (click)="navigate(m)">
+      <mat-card-header>
+        <mat-card-title>
+          {{routeName(m)}}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <p *ngIf="m.data">{{m.data['description']}}</p>
+      </mat-card-content>
+    </mat-card>
+  </ng-container>
+
+</ng-container>
