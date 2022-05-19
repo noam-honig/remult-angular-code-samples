@@ -19,6 +19,7 @@ import { ServerSideSearchComponent } from './server-side-search/server-side-sear
 import { SearchFieldWithDataGridComponent } from './search-field-with-data-grid/search-field-with-data-grid.component';
 import { ServerSideSearchSelectionDialogDemoComponent } from './server-side-search-selection-dialog/server-side-search-selection-dialog-demo.component';
 import { FullPageLayoutComponent } from './full-page-layout/full-page-layout.component';
+import { MultiSelectListDialogDemoComponent } from './multi-select-list-dialog/multi-select-list-demo.component';
 
 const defaultRoute = terms.home;
 const routes: Routes = [
@@ -39,6 +40,12 @@ const routes: Routes = [
     path: 'Server Side Search Selection Dialog', component: ServerSideSearchSelectionDialogDemoComponent, data: {
       description: 'a Search popup that can be used to select a product with server side search'
       , source: 'server-side-search-selection-dialog'
+    }
+  },
+  {
+    path: 'Multi Select Dialog', component: MultiSelectListDialogDemoComponent, data: {
+      description: 'a Search popup that can be used to select multiple values'
+      , source: 'multi-select-list-dialog'
     }
   },
   {

@@ -30,6 +30,7 @@ import { SearchFieldWithDataGridComponent } from './search-field-with-data-grid/
 import { FullPageLayoutComponent } from './full-page-layout/full-page-layout.component';
 import { ServerSideSearchSelectionDialogComponent } from './server-side-search-selection-dialog/server-side-search-selection-dialog.component';
 import { ServerSideSearchSelectionDialogDemoComponent } from './server-side-search-selection-dialog/server-side-search-selection-dialog-demo.component';
+import { MultiSelectListDialogComponent } from './multi-select-list-dialog/multi-select-list-dialog.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { ServerSideSearchSelectionDialogDemoComponent } from './server-side-sear
     SearchFieldWithDataGridComponent,
     FullPageLayoutComponent,
     ServerSideSearchSelectionDialogComponent,
-    ServerSideSearchSelectionDialogDemoComponent
+    ServerSideSearchSelectionDialogDemoComponent,
+    MultiSelectListDialogComponent
   ],
   imports: [
     BrowserModule,
