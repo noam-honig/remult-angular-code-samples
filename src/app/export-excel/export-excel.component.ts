@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Remult } from 'remult';
 import * as xlsx from 'xlsx';//https://sheetjs.com/
-import { Products } from '../products/products';
+import { Product } from '../products/product';
 
 @Component({
   selector: 'app-export-excel',
@@ -20,7 +20,7 @@ export class ExportExcelComponent implements OnInit {
 
     let result = [];
 
-    for await (const p of  this.remult.repo(Products).query()) {
+    for await (const p of  this.remult.repo(Product).query()) {
       let item:any = {};
       for (const col of p.$) {
         item[col.metadata.caption] = col.value;

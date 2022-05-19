@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Products } from '../products/products';
+import { Product } from '../products/product';
 import * as xlsx from 'xlsx';//https://sheetjs.com/
 import { ImportExcelController } from './import-excel.controller';
 

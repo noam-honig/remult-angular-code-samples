@@ -24,6 +24,12 @@ import { InputAreaComponent } from './common/input-area/input-area.component';
 import { DialogService } from './common/dialog';
 import { AdminGuard } from "./users/AdminGuard";
 import { ProductsComponent } from './products/products.component';
+import { DynamicServerSideSearchDialogComponent } from './dynamic-server-side-search-dialog/dynamic-server-side-search-dialog.component';
+import { ServerSideSearchComponent } from './server-side-search/server-side-search.component';
+import { SearchFieldWithDataGridComponent } from './search-field-with-data-grid/search-field-with-data-grid.component';
+import { FullPageLayoutComponent } from './full-page-layout/full-page-layout.component';
+import { ServerSideSearchSelectionDialogComponent } from './server-side-search-selection-dialog/server-side-search-selection-dialog.component';
+import { ServerSideSearchSelectionDialogDemoComponent } from './server-side-search-selection-dialog/server-side-search-selection-dialog-demo.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +38,13 @@ import { ProductsComponent } from './products/products.component';
     HomeComponent,
     YesNoQuestionComponent,
     InputAreaComponent,
-    ProductsComponent
+    ProductsComponent,
+    DynamicServerSideSearchDialogComponent,
+    ServerSideSearchComponent,
+    SearchFieldWithDataGridComponent,
+    FullPageLayoutComponent,
+    ServerSideSearchSelectionDialogComponent,
+    ServerSideSearchSelectionDialogDemoComponent
   ],
   imports: [
     BrowserModule,

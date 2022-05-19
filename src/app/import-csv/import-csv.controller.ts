@@ -1,10 +1,10 @@
 import { BackendMethod, Remult } from "remult";
-import { Products } from "../products/products";
+import { Product } from "../products/product";
 
 export class ImportCsvController {
     @BackendMethod({ allowed: true })
     static async importProductsArray(dataArray: any[][], remult?: Remult) {
-        const productRepo = remult!.repo(Products);
+        const productRepo = remult!.repo(Product);
         let i = 0;
         for (const row of dataArray) {
             if (row[0]) {

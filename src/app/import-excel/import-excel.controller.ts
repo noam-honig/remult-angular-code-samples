@@ -2,12 +2,12 @@
 import { Remult } from 'remult';
 import { BackendMethod } from 'remult/src/server-action';
 import * as xlsx from 'xlsx';//https://sheetjs.com/
-import { Products } from '../products/products';
+import { Product } from '../products/product';
 
 export class ImportExcelController {
     @BackendMethod({ allowed: true })
     static async importProductsFromExcel(dataArray: any, remult?: Remult) {
-        const productRepo = remult!.repo(Products);
+        const productRepo = remult!.repo(Product);
         let i = 0;
         for (const row of dataArray) {
             i++;

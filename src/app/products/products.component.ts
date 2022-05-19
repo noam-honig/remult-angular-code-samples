@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GridSettings } from '@remult/angular/interfaces';
 import { Remult } from 'remult';
-import { Products } from './products';
+import { Product } from './product';
 
 @Component({
   selector: 'app-products',
@@ -10,7 +10,7 @@ import { Products } from './products';
 export class ProductsComponent implements OnInit {
 
   constructor(private remult: Remult) { }
-  grid = new GridSettings(this.remult.repo(Products), { allowCrud: true });
+  grid = new GridSettings(this.remult.repo(Product), { allowCrud: true });
   ngOnInit(): void {
   }
 
