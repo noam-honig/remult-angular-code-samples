@@ -1,30 +1,8 @@
-# Angular Starter Project
+# RemultAngularCodeSamples
 
-This project is a starter project for using remult & angular that already has a menu, basic user management and other utilities.
+This project includes all sorts of useful code samples intended on helping you create great applications easily.
 
-To use in a new project:
-```sh
-md angular-starter-project
-cd angular-starter-project
-git init
-git pull https://github.com/noam-honig/angular-starter-project.git
-npm i
-```
+The code samples are not necessarily remult specific - but hopefully all will be useful. 
 
-To run:
-```sh
-npm run dev
-```
-
-# Tutorial:
-See [Creating a Fullstack Angular Remult app for non web developer](https://github.com/noam-honig/angular-starter-project/wiki/Creating-a-Fullstack-Angular-Remult-app-for-non-web-developer)
-
-
-# Create an Heroku site and deploy to it
-```sh
-heroku apps:create 
-heroku addons:create heroku-postgresql:hobby-dev
-heroku config:set JWT_SECRET=some-very-secret-key
-git push heroku master 
-heroku apps:open
-```
+You can run the samples at:
+[stackblitz](https://stackblitz.com/edit/remult-angular-code-samples?file=src/app/products/products.ts)
